@@ -1,5 +1,8 @@
 import React from 'react';
 import Logo from './Logo.js';
+import ListToggle from './ListToggle';
+import Navigation from './Navigation';
+import UserProfile from './UserProfile';
 import './App.css';
 
 /////////////////
@@ -46,37 +49,7 @@ var App = React.createClass({
 });
 
 
-// Navigation
-var Navigation = React.createClass({
-    render: function() {
-        return (
-            <div id="navigation" className="Navigation">
-                <nav>
-                    <ul>
-                        <li>Browse</li>
-                        <li>My list</li>
-                        <li>Top picks</li>
-                        <li>Recent</li>
-                    </ul>
-                </nav>
-            </div>
-        );
-    }
-});
 
-// User Profile
-var UserProfile = React.createClass({
-    render: function() {
-        return (
-            <div className="UserProfile">
-                <div className="User">
-                    <div className="name">Jack Oliver</div>
-                    <div className="image"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/profile/profile-512_1.jpg" alt="profile" /></div>
-                </div>
-            </div>
-        );
-    }
-});
 
 //////////
 // Hero //
@@ -200,30 +173,7 @@ var Item = React.createClass({
     }
 });
 
-// ListToggle
-var ListToggle = React.createClass({
-    getInitialState: function() {
-        return({ toggled: false })
-    },
-    handleClick: function() {
-        if(this.state.toggled === true) {
-            this.setState({ toggled: false });
-        } else {
-            this.setState({ toggled: true });
-        }
 
-    },
-    render: function() {
-        return (
-            <div onClick={this.handleClick} data-toggled={this.state.toggled} className="ListToggle">
-                <div>
-                    <i className="fa fa-fw fa-plus"></i>
-                    <i className="fa fa-fw fa-check"></i>
-                </div>
-            </div>
-        );
-    }
-});
 
 
 export default App;
