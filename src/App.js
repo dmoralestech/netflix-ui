@@ -1,6 +1,5 @@
 import React from 'react';
-import Logo from './Logo.js';
-
+import Logo from './Logo';
 import Navigation from './Navigation';
 import UserProfile from './UserProfile';
 import TitleList from './TitleList';
