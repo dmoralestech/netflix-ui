@@ -1,8 +1,9 @@
 import React from 'react';
 import Logo from './Logo.js';
-import ListToggle from './ListToggle';
+
 import Navigation from './Navigation';
 import UserProfile from './UserProfile';
+import Item from './Item'
 import './App.css';
 
 /////////////////
@@ -47,7 +48,6 @@ var App = React.createClass({
         );
     }
 });
-
 
 
 
@@ -151,22 +151,6 @@ var TitleList = React.createClass({
                     <div className="titles-wrapper">
                         {titles}
                     </div>
-                </div>
-            </div>
-        );
-    }
-});
-
-// Title List Item
-var Item = React.createClass({
-    render: function() {
-        return (
-            <div className="Item" style={{backgroundImage: 'url(' + this.props.backdrop + ')'}} >
-                <div className="overlay">
-                    <div className="title">{this.props.title}</div>
-                    <div className="rating">{this.props.score} / 10</div>
-                    <div className="plot">{this.props.overview}</div>
-                    <ListToggle />
                 </div>
             </div>
         );
