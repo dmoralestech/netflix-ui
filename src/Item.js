@@ -6,9 +6,9 @@ import ListToggle from './ListToggle';
 
 // Title List Item
 var Item = React.createClass({
-    render: function() {
+    render: function () {
         return (
-            <div className="Item" style={{backgroundImage: 'url(' + this.props.backdrop + ')'}} >
+            <div className="Item" style={{backgroundImage: 'url(' + this.props.backdrop + ')'}}>
                 <div className="overlay">
                     <div className="title">{this.props.title}</div>
                     <div className="rating">{this.props.score} / 10</div>

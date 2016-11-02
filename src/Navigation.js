@@ -6,7 +6,7 @@ import './App.css';
 
 // Navigation
 var Navigation = React.createClass({
-    render: function() {
+    render: function () {
         return (
             <div id="navigation" className="Navigation">
                 <nav>

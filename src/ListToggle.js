@@ -6,18 +6,18 @@ import './App.css';
 
 // ListToggle
 var ListToggle = React.createClass({
-    getInitialState: function() {
-        return({ toggled: false })
+    getInitialState: function () {
+        return ({toggled: false})
     },
-    handleClick: function() {
-        if(this.state.toggled === true) {
-            this.setState({ toggled: false });
+    handleClick: function () {
+        if (this.state.toggled === true) {
+            this.setState({toggled: false});
         } else {
-            this.setState({ toggled: true });
+            this.setState({toggled: true});
         }
 
     },
-    render: function() {
+    render: function () {
         return (
             <div onClick={this.handleClick} data-toggled={this.state.toggled} className="ListToggle">
                 <div>
