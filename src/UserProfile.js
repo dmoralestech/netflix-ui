@@ -3,8 +3,6 @@
  */
 import React from 'react';
 
-import './App.css';
-
 
 // User Profile
 var UserProfile = React.createClass({

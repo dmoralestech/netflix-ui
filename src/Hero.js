@@ -2,6 +2,7 @@
  * Created by dmorales on 3/11/2016.
  */
 import React from 'react'
+import HeroButton from './HeroButton'
 
 //////////
 // Hero //
@@ -29,14 +30,6 @@ var Hero = React.createClass({
     }
 })
 
-// Hero Button
-var HeroButton = React.createClass({
-    render: function () {
-        return (
-            <a href="#" className="Button" data-primary={this.props.primary}>{this.props.text}</a>
-        );
-    }
-})
 
 
 export default Hero

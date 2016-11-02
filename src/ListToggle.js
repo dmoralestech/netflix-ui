@@ -2,7 +2,6 @@
  * Created by dmorales on 3/11/2016.
  */
 import React from 'react';
-import './App.css';
 
 // ListToggle
 var ListToggle = React.createClass({
