@@ -4,8 +4,25 @@
 import React from 'react';
 
 // Navigation
-var Navigation = React.createClass({
-    render: function () {
+// var Navigation = React.createClass({
+//     render: function () {
+//         return (
+//             <div id="navigation" className="Navigation">
+//                 <nav>
+//                     <ul>
+//                         <li>Browse</li>
+//                         <li>My list</li>
+//                         <li>Top picks</li>
+//                         <li>Recent</li>
+//                     </ul>
+//                 </nav>
+//             </div>
+//         );
+//     }
+// });
+
+class Navigation extends React.Component {
+    render() {
         return (
             <div id="navigation" className="Navigation">
                 <nav>
@@ -19,6 +36,6 @@ var Navigation = React.createClass({
             </div>
         );
     }
-});
+}
 
 export default Navigation; 

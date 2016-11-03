@@ -3,10 +3,24 @@
  */
 import React from 'react';
 
-
 // User Profile
-var UserProfile = React.createClass({
-    render: function () {
+// var UserProfile = React.createClass({
+//     render: function () {
+//         return (
+//             <div className="UserProfile">
+//                 <div className="User">
+//                     <div className="name">Jack Oliver</div>
+//                     <div className="image"><img
+//                         src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/profile/profile-512_1.jpg"
+//                         alt="profile"/></div>
+//                 </div>
+//             </div>
+//         );
+//     }
+// });
+
+class UserProfile extends React.Component {
+    render() {
         return (
             <div className="UserProfile">
                 <div className="User">
@@ -18,7 +32,6 @@ var UserProfile = React.createClass({
             </div>
         );
     }
-});
-
+}
 
 export default UserProfile
