@@ -4,9 +4,8 @@
 import React from 'react'
 import ListToggle from './ListToggle';
 
-// Title List Item
-var Item = React.createClass({
-    render: function () {
+class Item extends React.Component {
+    render() {
         return (
             <div className="Item" style={{backgroundImage: 'url(' + this.props.backdrop + ')'}}>
                 <div className="overlay">
@@ -18,7 +17,7 @@ var Item = React.createClass({
             </div>
         );
     }
-});
 
+}
 
 export default Item
