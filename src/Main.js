@@ -13,12 +13,10 @@ class Main extends React.Component {
         var Child;
         
         switch(this.props.route) {
-            case 'orig':
-                Child = App;
-            default:
-                Child = MyApp;
+            case 'orig': Child = App;
+            default:Child = MyApp;
         }
-        
+
         return (
             <div>
                 <Child/>
